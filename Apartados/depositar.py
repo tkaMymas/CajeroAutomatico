@@ -1,6 +1,9 @@
 import time
 
+dineroEnBanco = 0
+
 def depositarDinero():
+    global dineroEnBanco
     print("Ingrese la cantidad de dinero a depositar.")
     print("10$", "25$", "50$", "100$")
     deposito = int(input())
@@ -14,12 +17,11 @@ def depositarDinero():
             print("Procesando...")
             time.sleep(0.5)
 
-            def ingresarDinero():
-                totalIngreso = deposito * depositoMonto
-                time.sleep(1)
-                print("Transacción completada.. \nSe han ingresado la cantidad de", str(totalIngreso) + "$",
-                      "a tu cuenta bancaria.")
-            ingresarDinero()
+            totalIngreso = deposito * depositoMonto
+            dineroEnBanco += totalIngreso
+            time.sleep(1)
+            print("Transacción completada.. \nSe han ingresado la cantidad de", str(totalIngreso) + "$",
+                  "a tu cuenta bancaria.")
             break
         else:
             time.sleep(0.5)
