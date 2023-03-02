@@ -6,7 +6,7 @@ print("Bienvenido a Central Bank")
 def menuCajero():
     time.sleep(1)
     print("Ingrese una operación a realizar.")
-    print("Depositar(1)    -    Retirar(2)   -   Consultar Historial(3)")
+    print("Depositar(1)    -    Retirar(2)   -   Consultar Saldo(3)")
     operacion = int(input())
 
     if operacion == 1:
