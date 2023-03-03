@@ -1,12 +1,9 @@
 import time
-from Apartados import depositar, retirar
+from Apartados import depositar
 
-dineroCuentaBancaria = 0
-
-def consultarHistorial():
-    print("Se le mostrara su historial bancario")
+def consultarSaldo():
+    print("Se le mostrara su saldo en un momento...")
     time.sleep(0.5)
     print("Procesando...")
     time.sleep(0.5)
-
-    print("Su cuenta de banco cuenta con..", str(dineroCuentaBancaria) + "$")
+    print("Actulamente cuenta con", str(depositar.dineroTotal) + "$", "en su cuenta de banco.")
