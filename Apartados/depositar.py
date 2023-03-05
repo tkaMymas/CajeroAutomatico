@@ -14,7 +14,7 @@ def depositarDinero():
 
     while True:
         if deposito == 10 or deposito == 25 or deposito == 50 or deposito == 100:
-            print("Ingrese la cantidad de montos de dinero depositara.")
+            print("Ingrese la cantidad de montos de dinero que depositara.")
             depositoMonto = int(input())
             time.sleep(0.5)
             if depositoMonto < 10:
